@@ -1,8 +1,8 @@
-import { Component, computed, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { SlicePipe } from '@angular/common';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { map } from 'rxjs';
+import { map, switchMap, catchError, of } from 'rxjs';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatChipsModule } from '@angular/material/chips';
@@ -31,9 +31,16 @@ export class RecetteDetailComponent {
   private readonly svc = inject(RecettesService);
   private readonly route = inject(ActivatedRoute);
 
-  private readonly id = toSignal(
-    this.route.paramMap.pipe(map((p) => Number(p.get('id'))))
+  private readonly id$ = this.route.paramMap.pipe(
+    map((p) => Number(p.get('id')))
   );
 
-  readonly recette = computed(() => this.svc.getById(this.id() ?? 0));
+  readonly recette = toSignal(
+    this.id$.pipe(
+      switchMap((id) =>
+        id ? this.svc.getById(id).pipe(catchError(() => of(undefined))) : of(undefined)
+      )
+    ),
+    { initialValue: undefined }
+  );
 }

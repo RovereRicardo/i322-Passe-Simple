@@ -15,7 +15,7 @@ npm install
 
 ## Lancer l'application
 
-Les deux serveurs doivent tourner **simultanément** dans deux terminaux séparés.
+Les deux serveurs doivent tourner **simultanément**. L'application Angular consomme l'API JSON Server via `HttpClient` — sans le serveur mock, aucune recette ne s'affiche.
 
 ### Terminal 1 — API mock (JSON Server)
 

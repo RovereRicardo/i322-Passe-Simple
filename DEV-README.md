@@ -24,7 +24,7 @@ src/
 │   ├── features/                    # One folder per page/route
 │   │   ├── home/                    # Landing page (3 random recipes)
 │   │   ├── recettes/                # Recipe list + filters
-│   │   │   ├── recettes.service.ts  # Data layer (hardcoded, swap for HTTP)
+│   │   │   ├── recettes.service.ts  # Data layer — HttpClient calls to JSON Server
 │   │   │   └── recette-detail/      # Detail page (ingredients + steps)
 │   │   ├── faq/
 │   │   └── contacts/
@@ -143,7 +143,7 @@ All routes are lazy-loaded — the bundle for your page is only fetched when the
 
 ## Adding a new recipe
 
-### In `db.json` (mock API)
+Add the object to the `recettes` array in `db.json`. JSON Server picks it up automatically on the next request (no restart needed if using `--watch`).
 
 ```json
 {
@@ -159,59 +159,34 @@ All routes are lazy-loaded — the bundle for your page is only fetched when the
 }
 ```
 
-### In `recettes.service.ts`
-
-Mirror the same object in the `recettes` array of `RecettesService`. The service is the source of truth for the UI until HTTP is wired up.
-
-```typescript
-// src/app/features/recettes/recettes.service.ts
-readonly recettes: Recette[] = [
-  // ... existing recipes
-  {
-    id: 6,
-    titre: 'Nom de la recette',
-    canton: 'Vaud',
-    date: '1900-01-01',
-    regime: ['Végétarien'],
-    ingredients: ['Ingrédient 1', 'Ingrédient 2'],
-    etapes: ['Étape 1', 'Étape 2'],
-    anecdote: `Contexte historique…`,
-    image: '',
-  },
-];
-```
-
 **Note on `regime` values**: must match the constants in `filter-bar.models.ts` (`'Végétarien'`, `'Sans gluten'`, `'Vegan'`) for filters to work.
 
 ---
 
-## Migrating from mock data to the real API
+## Data layer — `RecettesService`
 
-`RecettesService` currently holds static data. To switch to HTTP:
+`RecettesService` fetches data from JSON Server via `HttpClient`. The base URL is `http://localhost:3000/recettes`.
 
 ```typescript
-// Before
-@Injectable({ providedIn: 'root' })
-export class RecettesService {
-  readonly recettes: Recette[] = [ /* hardcoded */ ];
-}
-
-// After
 @Injectable({ providedIn: 'root' })
 export class RecettesService {
   private readonly http = inject(HttpClient);
+  private readonly BASE = 'http://localhost:3000/recettes';
 
-  getAll(): Observable<Recette[]> {
-    return this.http.get<Recette[]>('http://localhost:3000/recettes');
-  }
+  // Signal<Recette[]> — populated on service creation, starts as []
+  readonly recettes = toSignal(
+    this.http.get<Recette[]>(this.BASE),
+    { initialValue: [] as Recette[] }
+  );
 
+  // Observable — used with switchMap in detail component
   getById(id: number): Observable<Recette> {
-    return this.http.get<Recette>(`http://localhost:3000/recettes/${id}`);
+    return this.http.get<Recette>(`${this.BASE}/${id}`);
   }
 }
 ```
 
-`HttpClient` is already provided in `app.config.ts` via `provideHttpClient()`.
+`HttpClient` is provided in `app.config.ts` via `provideHttpClient()`. **JSON Server must be running** (`npm run mock-api`) for the app to display any data.
 
 ---
 

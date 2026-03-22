@@ -36,7 +36,7 @@ export class RecettesComponent {
     const q = this.query().toLowerCase().trim();
     const { dateRange, regimes, cantons } = this.filter();
 
-    return this.svc.recettes.filter((r) => {
+    return this.svc.recettes().filter((r) => {
       if (q && !r.titre.toLowerCase().includes(q) && !r.canton.toLowerCase().includes(q)) {
         return false;
       }
@@ -44,7 +44,7 @@ export class RecettesComponent {
         const year = new Date(r.date).getFullYear();
         if (year < dateRange.from || year > dateRange.to) return false;
       }
-      if (regimes.length && !regimes.some((reg) => r.regime.includes(reg))) {
+      if (regimes.length && !regimes.some((reg) => r.regime.some((rv) => rv.toLowerCase() === reg.toLowerCase()))) {
         return false;
       }
       if (cantons.length && !cantons.includes(r.canton)) {

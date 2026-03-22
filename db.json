@@ -130,7 +130,7 @@
         "Servir chaud avec du fromage râpé et de la compote de fruits."
       ],
       "anecdote": "Les Maluns sont le plat paysan par excellence des vallées reculées des Grisons, notamment de la région de Lugnez et de la Surselva rhéto-romane. Dans les hivers rigoureux où les villages étaient isolés pendant des semaines, ce mélange de pommes de terre et de farine — les deux denrées toujours disponibles — nourrissait familles et bergers. Le mot 'maluns' vient du romanche et n'a pas d'équivalent exact en français.",
-      "image": "src/app/imgs/maluns.jpg"
+      "image": "imgs/maluns.jpg"
     }
   ]
 }
