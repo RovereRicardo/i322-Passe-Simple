@@ -59,6 +59,25 @@ npx concurrently "npx json-server --watch db.json --port 3000" "ng serve"
 
 ---
 
+## Arrêter les serveurs
+
+**Si lancés dans des terminaux séparés** : `Ctrl + C` dans chaque terminal.
+
+**Si les processus tournent en arrière-plan**, tuer les ports directement :
+
+```bash
+kill $(lsof -ti :4200) 2>/dev/null   # Angular
+kill $(lsof -ti :3000) 2>/dev/null   # JSON Server
+```
+
+Ou les deux en une commande :
+
+```bash
+kill $(lsof -ti :4200,:3000) 2>/dev/null
+```
+
+---
+
 ## Pages et routes Angular
 
 | Route | Page |
