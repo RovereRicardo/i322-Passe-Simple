@@ -1,0 +1,39 @@
+<section class="home-page">
+
+  <header class="home-hero">
+    <h1 class="mat-display-small">Passe-simple</h1>
+    <p class="mat-body-large">Découvrez le patrimoine culinaire de la Suisse à travers ses recettes historiques.</p>
+    <a mat-flat-button routerLink="/recettes">Voir toutes les recettes</a>
+  </header>
+
+  <h2 class="mat-title-large section-title">Recettes à la une</h2>
+
+  <div class="recipe-grid">
+    @for (recette of featured; track recette.id) {
+      <mat-card
+        class="recipe-card"
+        appearance="outlined"
+        matRipple
+        [routerLink]="['/recettes', recette.id]"
+      >
+        <div class="recipe-card-image-placeholder">
+          <mat-icon>restaurant</mat-icon>
+        </div>
+        <mat-card-header>
+          <mat-card-title>{{ recette.titre }}</mat-card-title>
+          <mat-card-subtitle>{{ recette.canton }} · {{ recette.date | slice:0:4 }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p class="anecdote-preview">{{ recette.anecdote | slice:0:100 }}…</p>
+          <mat-chip-set>
+            <mat-chip>{{ recette.canton }}</mat-chip>
+            @for (regime of recette.regime; track regime) {
+              <mat-chip>{{ regime }}</mat-chip>
+            }
+          </mat-chip-set>
+        </mat-card-content>
+      </mat-card>
+    }
+  </div>
+
+</section>

@@ -1,0 +1,53 @@
+<div class="app-wrapper">
+
+  <!-- Top app bar sits ABOVE the sidenav so it is never covered -->
+  <mat-toolbar color="primary" class="app-toolbar">
+    <button mat-icon-button (click)="toggleSidenav()" aria-label="Ouvrir le menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="app-title">Passe-simple</span>
+    <span class="toolbar-spacer"></span>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="sidenav-container">
+
+    <!-- Burger side-nav -->
+    <mat-sidenav
+      mode="over"
+      [opened]="sidenavOpen()"
+      (closed)="sidenavOpen.set(false)"
+      class="sidenav"
+    >
+      <mat-toolbar class="sidenav-header">
+        <span>Menu</span>
+        <button mat-icon-button (click)="toggleSidenav()" aria-label="Fermer le menu">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-toolbar>
+
+      <mat-nav-list>
+        <a mat-list-item routerLink="/recettes" routerLinkActive="active-link" (click)="toggleSidenav()">
+          <mat-icon matListItemIcon>restaurant_menu</mat-icon>
+          <span matListItemTitle>Recettes</span>
+        </a>
+        <a mat-list-item routerLink="/faq" routerLinkActive="active-link" (click)="toggleSidenav()">
+          <mat-icon matListItemIcon>help_outline</mat-icon>
+          <span matListItemTitle>FAQ</span>
+        </a>
+        <a mat-list-item routerLink="/contacts" routerLinkActive="active-link" (click)="toggleSidenav()">
+          <mat-icon matListItemIcon>contacts</mat-icon>
+          <span matListItemTitle>Contacts</span>
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <!-- Main content -->
+    <mat-sidenav-content>
+      <main class="main-content">
+        <router-outlet />
+      </main>
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
+
+</div>

@@ -1,0 +1,155 @@
+import { Injectable } from '@angular/core';
+
+export interface Recette {
+  id: number;
+  titre: string;
+  canton: string;
+  date: string;
+  regime: string[];
+  ingredients: string[];
+  etapes: string[];
+  anecdote: string;
+  image: string;
+}
+
+@Injectable({ providedIn: 'root' })
+export class RecettesService {
+  readonly recettes: Recette[] = [
+    {
+      id: 1,
+      titre: 'Fondue moitié-moitié',
+      canton: 'Fribourg',
+      date: '1875-01-01',
+      regime: ['Végétarien'],
+      ingredients: [
+        '400g de Gruyère AOP',
+        '400g de Vacherin fribourgeois AOP',
+        '3 dl de vin blanc sec',
+        '1 gousse d\'ail',
+        '1 cs de maïzena',
+        '2 cl de kirsch',
+        'Poivre, noix de muscade',
+      ],
+      etapes: [
+        'Frotter le caquelon avec la gousse d\'ail coupée.',
+        'Verser le vin blanc et chauffer à feu doux sans bouillir.',
+        'Ajouter les fromages râpés progressivement en remuant en huit.',
+        'Délayer la maïzena dans le kirsch, incorporer au mélange.',
+        'Assaisonner de poivre et muscade.',
+        'Servir au centre de la table avec du pain coupé en dés.',
+      ],
+      anecdote: `La fondue moitié-moitié est née dans les alpages fribourgeois au XIXe siècle, quand les bergers mélangeaient leurs deux fromages locaux — le Gruyère et le Vacherin — pour enrichir leur repas hivernal. Sa popularité internationale a explosé après son exposition lors de l'Exposition universelle de 1964 à Lausanne.`,
+      image: '',
+    },
+    {
+      id: 2,
+      titre: 'Rösti bernois',
+      canton: 'Berne',
+      date: '1800-01-01',
+      regime: ['Végétarien', 'Sans gluten'],
+      ingredients: [
+        '800g de pommes de terre à chair ferme (Charlotte ou Bintje)',
+        '60g de beurre clarifié',
+        '1 cc de sel fin',
+        'Poivre noir du moulin',
+      ],
+      etapes: [
+        'Cuire les pommes de terre non épluchées la veille, puis réfrigérer toute la nuit.',
+        'Éplucher et râper grossièrement les pommes de terre refroidies.',
+        'Assaisonner de sel et poivre.',
+        'Faire fondre la moitié du beurre dans une poêle à feu moyen.',
+        'Ajouter les pommes de terre et former une galette compacte en pressant.',
+        'Cuire 12–15 min jusqu\'à croûte dorée, puis retourner avec une assiette.',
+        'Ajouter le reste du beurre et cuire encore 12 min de l\'autre côté.',
+      ],
+      anecdote: `Le rösti était à l'origine le petit-déjeuner quotidien des agriculteurs bernois, qui l'accompagnaient de lait. Il est devenu l'un des symboles de la 'Röstigraben' — le fossé culturel et linguistique entre la Suisse alémanique et la Suisse romande, souvent évoqué lors de votations fédérales où les deux régions votent différemment.`,
+      image: '',
+    },
+    {
+      id: 3,
+      titre: 'Raclette valaisanne',
+      canton: 'Valais',
+      date: '1860-01-01',
+      regime: ['Végétarien', 'Sans gluten'],
+      ingredients: [
+        '500g de fromage à raclette du Valais AOP',
+        '800g de pommes de terre grenaille en robe des champs',
+        'Cornichons à la moutarde',
+        'Petits oignons blancs marinés au vinaigre',
+        'Poivre noir',
+        'Paprika (facultatif)',
+      ],
+      etapes: [
+        'Cuire les pommes de terre à l\'eau salée jusqu\'à ce qu\'elles soient tendres.',
+        'Couper le fromage en tranches d\'environ 5 mm.',
+        'Placer le fromage dans l\'appareil à raclette ou sous le grill.',
+        'Racler le fromage fondu sur les pommes de terre chaudes.',
+        'Accompagner de cornichons et d\'oignons marinés.',
+        'Poivrer généreusement avant de déguster.',
+      ],
+      anecdote: `La raclette tire son nom du verbe « racler » : on exposait autrefois une demi-meule de fromage devant un feu de bois dans les chalets d'alpage valaisans, puis on raclait le fromage fondu directement dans l'assiette. En 1909, le terme 'raclette' apparaît pour la première fois par écrit dans un texte du Haut-Valais.`,
+      image: '',
+    },
+    {
+      id: 4,
+      titre: 'Zürcher Geschnetzeltes',
+      canton: 'Zurich',
+      date: '1947-01-01',
+      regime: [],
+      ingredients: [
+        '600g de filet de veau',
+        '200g de champignons de Paris',
+        '1 échalote',
+        '2 dl de vin blanc zurichois (Riesling-Sylvaner)',
+        '2 dl de crème entière',
+        '30g de beurre',
+        '1 cs d\'huile neutre',
+        'Sel, poivre blanc',
+        'Persil plat haché',
+      ],
+      etapes: [
+        'Couper le veau en fines lanières (geschnetzeltes = émincé).',
+        'Émincer l\'échalote et trancher les champignons.',
+        'Saisir la viande à feu vif dans le beurre et l\'huile, réserver.',
+        'Faire revenir l\'échalote puis les champignons dans la même poêle.',
+        'Déglacer au vin blanc, réduire de moitié.',
+        'Ajouter la crème et laisser réduire jusqu\'à consistance veloutée.',
+        'Remettre la viande, assaisonner, parsemer de persil.',
+        'Servir avec des Rösti ou des spätzli.',
+      ],
+      anecdote: `Le Zürcher Geschnetzeltes est la recette emblématique de Zurich, popularisée dans les grands restaurants de la Bahnhofstrasse au milieu du XXe siècle. La première recette codifiée figure dans le livre de cuisine de Marianne Kaltenbach (1947). Un vrai Geschnetzeltes ne contient ni rognons ni citron — tout ajout reste sujet à débat entre puristes zurichois.`,
+      image: '',
+    },
+    {
+      id: 5,
+      titre: 'Maluns grisonnais',
+      canton: 'Grisons',
+      date: '1820-01-01',
+      regime: ['Végétarien'],
+      ingredients: [
+        '600g de pommes de terre crues, épluchées',
+        '200g de farine blanche',
+        '80g de beurre',
+        '1 cc de sel',
+        'Appenzeller ou Schabziger râpé pour servir',
+        'Compote de pommes ou poires séchées pour servir',
+      ],
+      etapes: [
+        'Râper finement les pommes de terre crues.',
+        'Essorer légèrement les pommes de terre râpées dans un linge.',
+        'Mélanger avec la farine et le sel jusqu\'à obtenir une masse homogène.',
+        'Faire fondre le beurre dans une large poêle à feu doux.',
+        'Ajouter la masse en petites portions et remuer constamment.',
+        'Cuire 30–40 min à feu doux en grattant le fond régulièrement.',
+        'La préparation se transforme en petites miettes dorées et croustillantes.',
+        'Servir chaud avec du fromage râpé et de la compote de fruits.',
+      ],
+      anecdote: `Les Maluns sont le plat paysan par excellence des vallées reculées des Grisons, notamment de la région de Lugnez et de la Surselva rhéto-romane. Dans les hivers rigoureux où les villages étaient isolés pendant des semaines, ce mélange de pommes de terre et de farine — les deux denrées toujours disponibles — nourrissait familles et bergers. Le mot 'maluns' vient du romanche et n'a pas d'équivalent exact en français.`,
+      image: '',
+    },
+  ];
+
+  getById(id: number): Recette | undefined {
+    return this.recettes.find((r) => r.id === id);
+  }
+}

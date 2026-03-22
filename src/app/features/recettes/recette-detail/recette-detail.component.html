@@ -1,0 +1,61 @@
+@if (recette(); as r) {
+  <article class="detail-page">
+
+    <a mat-button routerLink="/recettes" class="back-btn">
+      <mat-icon>arrow_back</mat-icon> Toutes les recettes
+    </a>
+
+    <header class="detail-header">
+      <h1 class="mat-headline-large">{{ r.titre }}</h1>
+      <mat-chip-set>
+        <mat-chip><mat-icon matChipAvatar>location_on</mat-icon>{{ r.canton }}</mat-chip>
+        <mat-chip><mat-icon matChipAvatar>calendar_today</mat-icon>{{ r.date | slice:0:4 }}</mat-chip>
+        @for (regime of r.regime; track regime) {
+          <mat-chip>{{ regime }}</mat-chip>
+        }
+      </mat-chip-set>
+    </header>
+
+    <div class="detail-image-placeholder">
+      <mat-icon>restaurant</mat-icon>
+    </div>
+
+    <!-- Anecdote -->
+    <section class="anecdote">
+      <h2 class="mat-title-medium">Anecdote historique</h2>
+      <p>{{ r.anecdote }}</p>
+    </section>
+
+    <!-- Ingredients + Steps side by side -->
+    <div class="recipe-columns">
+
+      <section class="recipe-col">
+        <h2 class="mat-title-medium col-title">Ingrédients</h2>
+        <ul class="checklist">
+          @for (ingredient of r.ingredients; track ingredient) {
+            <li><mat-checkbox>{{ ingredient }}</mat-checkbox></li>
+          }
+        </ul>
+      </section>
+
+      <mat-divider vertical class="col-divider" />
+
+      <section class="recipe-col">
+        <h2 class="mat-title-medium col-title">Préparation</h2>
+        <ol class="checklist">
+          @for (etape of r.etapes; track $index) {
+            <li>
+              <mat-checkbox>
+                <span class="step-number">{{ $index + 1 }}.</span> {{ etape }}
+              </mat-checkbox>
+            </li>
+          }
+        </ol>
+      </section>
+
+    </div>
+
+  </article>
+} @else {
+  <p class="not-found">Recette introuvable.</p>
+}

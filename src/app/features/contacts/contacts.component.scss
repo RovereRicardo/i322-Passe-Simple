@@ -1,0 +1,16 @@
+.contacts-page {
+  padding-top: 8px;
+}
+
+.contact-card {
+  max-width: 480px;
+  margin-top: 16px;
+
+  mat-icon[inline] {
+    vertical-align: middle;
+    margin-right: 6px;
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
+}

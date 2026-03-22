@@ -1,0 +1,50 @@
+.recettes-page {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.recipe-card {
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.recipe-card-image-placeholder {
+  height: 160px;
+  background-color: var(--mat-sys-surface-variant);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  mat-icon {
+    font-size: 64px;
+    width: 64px;
+    height: 64px;
+    color: var(--mat-sys-on-surface-variant);
+    opacity: 0.4;
+  }
+}
+
+.anecdote-preview {
+  font-size: 0.875rem;
+  color: var(--mat-sys-on-surface-variant);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.empty-state {
+  margin-top: 48px;
+  text-align: center;
+  color: var(--mat-sys-on-surface-variant);
+}

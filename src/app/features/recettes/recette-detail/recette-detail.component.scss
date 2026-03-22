@@ -1,0 +1,104 @@
+.detail-page {
+  max-width: 960px;
+}
+
+.back-btn {
+  margin-bottom: 16px;
+}
+
+.detail-header {
+  margin-bottom: 16px;
+
+  h1 {
+    margin: 0 0 12px;
+  }
+}
+
+.detail-image-placeholder {
+  height: 240px;
+  background-color: var(--mat-sys-surface-variant);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
+
+  mat-icon {
+    font-size: 80px;
+    width: 80px;
+    height: 80px;
+    color: var(--mat-sys-on-surface-variant);
+    opacity: 0.35;
+  }
+}
+
+.anecdote {
+  background-color: var(--mat-sys-surface-container);
+  border-left: 4px solid var(--mat-sys-primary);
+  padding: 16px 20px;
+  border-radius: 0 8px 8px 0;
+  margin: 8px 0 24px;
+
+  h2 {
+    margin: 0 0 8px;
+    color: var(--mat-sys-primary);
+  }
+
+  p {
+    margin: 0;
+    line-height: 1.7;
+    color: var(--mat-sys-on-surface-variant);
+  }
+}
+
+/* Two-column recipe layout */
+.recipe-columns {
+  display: flex;
+  gap: 0;
+  align-items: flex-start;
+  margin-top: 8px;
+}
+
+.recipe-col {
+  flex: 1;
+  padding: 16px 24px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.col-divider {
+  align-self: stretch;
+  flex-shrink: 0;
+}
+
+.col-title {
+  margin: 0 0 16px;
+  color: var(--mat-sys-primary);
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.step-number {
+  font-weight: 600;
+  color: var(--mat-sys-primary);
+  margin-right: 2px;
+}
+
+.not-found {
+  text-align: center;
+  margin-top: 80px;
+  color: var(--mat-sys-on-surface-variant);
+}

@@ -1,0 +1,42 @@
+<div class="filter-bar">
+
+  <mat-form-field appearance="outline" class="filter-field">
+    <mat-label>Époque</mat-label>
+    <mat-select
+      [ngModel]="selectedDate()"
+      (ngModelChange)="onDateChange($event)"
+    >
+      <mat-option [value]="null">Toutes les époques</mat-option>
+      @for (range of dateRanges; track range.label) {
+        <mat-option [value]="range.value">{{ range.label }}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="filter-field">
+    <mat-label>Régime</mat-label>
+    <mat-select
+      multiple
+      [ngModel]="selectedRegimes()"
+      (ngModelChange)="onRegimeChange($event)"
+    >
+      @for (regime of regimes; track regime) {
+        <mat-option [value]="regime">{{ regime }}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="filter-field">
+    <mat-label>Canton</mat-label>
+    <mat-select
+      multiple
+      [ngModel]="selectedCantons()"
+      (ngModelChange)="onCantonChange($event)"
+    >
+      @for (canton of cantons; track canton) {
+        <mat-option [value]="canton">{{ canton }}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+
+</div>

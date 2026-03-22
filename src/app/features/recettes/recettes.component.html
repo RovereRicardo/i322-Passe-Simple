@@ -1,0 +1,38 @@
+<section class="recettes-page">
+
+  <app-search-bar (searchChange)="query.set($event)" />
+  <app-filter-bar (filterChange)="filter.set($event)" />
+
+  @if (filteredRecettes().length === 0) {
+    <p class="empty-state">Aucune recette ne correspond à votre recherche.</p>
+  }
+
+  <div class="recipe-grid">
+    @for (recette of filteredRecettes(); track recette.id) {
+      <mat-card
+        class="recipe-card"
+        appearance="outlined"
+        matRipple
+        [routerLink]="['/recettes', recette.id]"
+      >
+        <div class="recipe-card-image-placeholder">
+          <mat-icon>restaurant</mat-icon>
+        </div>
+        <mat-card-header>
+          <mat-card-title>{{ recette.titre }}</mat-card-title>
+          <mat-card-subtitle>{{ recette.canton }} · {{ recette.date | slice:0:4 }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p class="anecdote-preview">{{ recette.anecdote | slice:0:100 }}…</p>
+          <mat-chip-set>
+            <mat-chip>{{ recette.canton }}</mat-chip>
+            @for (regime of recette.regime; track regime) {
+              <mat-chip>{{ regime }}</mat-chip>
+            }
+          </mat-chip-set>
+        </mat-card-content>
+      </mat-card>
+    }
+  </div>
+
+</section>
