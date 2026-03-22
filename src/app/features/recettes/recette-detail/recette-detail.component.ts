@@ -9,6 +9,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { RecettesService } from '../recettes.service';
+import { NotFoundComponent } from '../../not-found/not-found.component';
 
 @Component({
   selector: 'app-recette-detail',
@@ -21,6 +22,7 @@ import { RecettesService } from '../recettes.service';
     MatDividerModule,
     MatCheckboxModule,
     SlicePipe,
+    NotFoundComponent,
   ],
   templateUrl: './recette-detail.component.html',
   styleUrl: './recette-detail.component.scss',

@@ -3,7 +3,6 @@ import { RouterLink } from '@angular/router';
 import { SlicePipe } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
-import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatRippleModule } from '@angular/material/core';
 import { SearchBarComponent } from '../../shared/search-bar/search-bar.component';
@@ -18,7 +17,6 @@ import { RecettesService } from './recettes.service';
     RouterLink,
     MatCardModule,
     MatChipsModule,
-    MatIconModule,
     MatButtonModule,
     MatRippleModule,
     SearchBarComponent,

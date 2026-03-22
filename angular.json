@@ -27,6 +27,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/app/imgs",
+                "output": "imgs"
               }
             ],
             "styles": ["src/styles.scss"],
@@ -76,5 +81,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a90b2247-5974-446a-8aef-1fa77df9b282"
   }
 }

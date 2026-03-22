@@ -16,8 +16,8 @@
       </mat-chip-set>
     </header>
 
-    <div class="detail-image-placeholder">
-      <mat-icon>restaurant</mat-icon>
+    <div class="detail-image">
+      <img [src]="r.image" [alt]="r.titre" />
     </div>
 
     <!-- Anecdote -->
@@ -57,5 +57,5 @@
 
   </article>
 } @else {
-  <p class="not-found">Recette introuvable.</p>
+  <app-not-found />
 }

@@ -16,8 +16,8 @@
         matRipple
         [routerLink]="['/recettes', recette.id]"
       >
-        <div class="recipe-card-image-placeholder">
-          <mat-icon>restaurant</mat-icon>
+        <div class="recipe-card-image">
+          <img [src]="recette.image" [alt]="recette.titre" />
         </div>
         <mat-card-header>
           <mat-card-title>{{ recette.titre }}</mat-card-title>

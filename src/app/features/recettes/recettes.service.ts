@@ -39,7 +39,7 @@ export class RecettesService {
         'Servir au centre de la table avec du pain coupé en dés.',
       ],
       anecdote: `La fondue moitié-moitié est née dans les alpages fribourgeois au XIXe siècle, quand les bergers mélangeaient leurs deux fromages locaux — le Gruyère et le Vacherin — pour enrichir leur repas hivernal. Sa popularité internationale a explosé après son exposition lors de l'Exposition universelle de 1964 à Lausanne.`,
-      image: '',
+      image: '/imgs/fondue-moitie-moitie.jpg',
     },
     {
       id: 2,
@@ -63,7 +63,7 @@ export class RecettesService {
         'Ajouter le reste du beurre et cuire encore 12 min de l\'autre côté.',
       ],
       anecdote: `Le rösti était à l'origine le petit-déjeuner quotidien des agriculteurs bernois, qui l'accompagnaient de lait. Il est devenu l'un des symboles de la 'Röstigraben' — le fossé culturel et linguistique entre la Suisse alémanique et la Suisse romande, souvent évoqué lors de votations fédérales où les deux régions votent différemment.`,
-      image: '',
+      image: '/imgs/roesti.jpg',
     },
     {
       id: 3,
@@ -88,7 +88,7 @@ export class RecettesService {
         'Poivrer généreusement avant de déguster.',
       ],
       anecdote: `La raclette tire son nom du verbe « racler » : on exposait autrefois une demi-meule de fromage devant un feu de bois dans les chalets d'alpage valaisans, puis on raclait le fromage fondu directement dans l'assiette. En 1909, le terme 'raclette' apparaît pour la première fois par écrit dans un texte du Haut-Valais.`,
-      image: '',
+      image: '/imgs/raclette-valaisane.jpeg',
     },
     {
       id: 4,
@@ -118,7 +118,7 @@ export class RecettesService {
         'Servir avec des Rösti ou des spätzli.',
       ],
       anecdote: `Le Zürcher Geschnetzeltes est la recette emblématique de Zurich, popularisée dans les grands restaurants de la Bahnhofstrasse au milieu du XXe siècle. La première recette codifiée figure dans le livre de cuisine de Marianne Kaltenbach (1947). Un vrai Geschnetzeltes ne contient ni rognons ni citron — tout ajout reste sujet à débat entre puristes zurichois.`,
-      image: '',
+      image: '/imgs/zuercher.jpg',
     },
     {
       id: 5,
@@ -145,7 +145,7 @@ export class RecettesService {
         'Servir chaud avec du fromage râpé et de la compote de fruits.',
       ],
       anecdote: `Les Maluns sont le plat paysan par excellence des vallées reculées des Grisons, notamment de la région de Lugnez et de la Surselva rhéto-romane. Dans les hivers rigoureux où les villages étaient isolés pendant des semaines, ce mélange de pommes de terre et de farine — les deux denrées toujours disponibles — nourrissait familles et bergers. Le mot 'maluns' vient du romanche et n'a pas d'équivalent exact en français.`,
-      image: '',
+      image: '/imgs/maluns.jpg',
     },
   ];
 

@@ -32,4 +32,11 @@ export const routes: Routes = [
         (m) => m.ContactsComponent
       ),
   },
+  {
+    path: '**',
+    loadComponent: () =>
+      import('./features/not-found/not-found.component').then(
+        (m) => m.NotFoundComponent
+      ),
+  },
 ];
