@@ -11,12 +11,10 @@
 
 .sidenav-container {
   flex: 1;
-  overflow: auto;
 }
 
 .sidenav {
   width: 280px;
-  height: fit-content;
   border-bottom-right-radius: 12px;
 }
 
@@ -40,6 +38,10 @@
 
 .toolbar-spacer {
   flex: 1 1 auto;
+}
+
+.sidenav-content {
+  overflow: auto;
 }
 
 .main-content {
