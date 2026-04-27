@@ -1,5 +1,5 @@
-import { Component, computed, inject, signal } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, computed, effect, inject, signal } from '@angular/core';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { SlicePipe } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
@@ -7,7 +7,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatRippleModule } from '@angular/material/core';
 import { SearchBarComponent } from '../../shared/search-bar/search-bar.component';
 import { FilterBarComponent } from '../../shared/filter-bar/filter-bar.component';
-import { FilterState } from '../../shared/filter-bar/filter-bar.models';
+import { DateRange, FilterState } from '../../shared/filter-bar/filter-bar.models';
 import { RecettesService } from './recettes.service';
 
 @Component({
@@ -28,9 +28,14 @@ import { RecettesService } from './recettes.service';
 })
 export class RecettesComponent {
   private readonly svc = inject(RecettesService);
+  private readonly router = inject(Router);
+  private readonly route = inject(ActivatedRoute);
 
-  readonly query = signal('');
-  readonly filter = signal<FilterState>({ dateRange: null, regimes: [], cantons: [] });
+  readonly initialQuery: string = this.route.snapshot.queryParams['q'] ?? '';
+  readonly initialFilter: FilterState = this.parseInitialFilter();
+
+  readonly query = signal(this.initialQuery);
+  readonly filter = signal<FilterState>(this.initialFilter);
 
   readonly filteredRecettes = computed(() => {
     const q = this.query().toLowerCase().trim();
@@ -53,4 +58,34 @@ export class RecettesComponent {
       return true;
     });
   });
+
+  constructor() {
+    effect(() => {
+      const q = this.query();
+      const { dateRange, regimes, cantons } = this.filter();
+      this.router.navigate([], {
+        relativeTo: this.route,
+        queryParams: {
+          q: q || null,
+          date: dateRange ? `${dateRange.from}_${dateRange.to}` : null,
+          regimes: regimes.length ? regimes.join(',') : null,
+          cantons: cantons.length ? cantons.join(',') : null,
+        },
+        replaceUrl: true,
+      });
+    });
+  }
+
+  private parseInitialFilter(): FilterState {
+    const p = this.route.snapshot.queryParams;
+    const dateParam: string | undefined = p['date'];
+    let dateRange: DateRange | null = null;
+    if (dateParam) {
+      const [from, to] = dateParam.split('_').map(Number);
+      if (!isNaN(from) && !isNaN(to)) dateRange = { from, to };
+    }
+    const regimes: string[] = p['regimes'] ? p['regimes'].split(',').filter(Boolean) : [];
+    const cantons: string[] = p['cantons'] ? p['cantons'].split(',').filter(Boolean) : [];
+    return { dateRange, regimes, cantons };
+  }
 }

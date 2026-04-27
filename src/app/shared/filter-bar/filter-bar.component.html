@@ -4,6 +4,7 @@
     <mat-label>Époque</mat-label>
     <mat-select
       [ngModel]="selectedDate()"
+      [compareWith]="compareDateRange"
       (ngModelChange)="onDateChange($event)"
     >
       <mat-option [value]="null">Toutes les époques</mat-option>
