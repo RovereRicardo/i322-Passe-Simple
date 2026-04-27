@@ -1,7 +1,7 @@
 <section class="recettes-page">
 
-  <app-search-bar (searchChange)="query.set($event)" />
-  <app-filter-bar (filterChange)="filter.set($event)" />
+  <app-search-bar [initialQuery]="initialQuery" (searchChange)="query.set($event)" />
+  <app-filter-bar [initialState]="initialFilter" (filterChange)="filter.set($event)" />
 
   @if (filteredRecettes().length === 0) {
     <p class="empty-state">Aucune recette ne correspond à votre recherche.</p>
