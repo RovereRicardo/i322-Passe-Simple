@@ -33,7 +33,10 @@
         <h2 class="mat-title-medium col-title">Ingrédients</h2>
         <ul class="checklist">
           @for (ingredient of r.ingredients; track ingredient) {
-            <li><mat-checkbox>{{ ingredient }}</mat-checkbox></li>
+            <li class="check-item">
+              <mat-checkbox #cb></mat-checkbox>
+              <label [for]="cb.inputId" class="check-text">{{ ingredient }}</label>
+            </li>
           }
         </ul>
       </section>
@@ -44,10 +47,11 @@
         <h2 class="mat-title-medium col-title">Préparation</h2>
         <ol class="checklist">
           @for (etape of r.etapes; track $index) {
-            <li>
-              <mat-checkbox>
-                <span class="step-number">{{ $index + 1 }}.</span> {{ etape }}
-              </mat-checkbox>
+            <li class="check-item">
+              <mat-checkbox #cb></mat-checkbox>
+              <label [for]="cb.inputId" class="check-text">
+                <span class="step-number">{{ $index + 1 }}.</span>{{ etape }}
+              </label>
             </li>
           }
         </ol>

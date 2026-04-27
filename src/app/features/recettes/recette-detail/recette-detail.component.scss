@@ -74,6 +74,21 @@
   flex-shrink: 0;
 }
 
+@media (max-width: 600px) {
+  .recipe-columns {
+    flex-direction: column;
+  }
+
+  .recipe-col {
+    padding: 16px 0;
+    width: 100%;
+  }
+
+  .col-divider {
+    display: none;
+  }
+}
+
 .col-title {
   margin: 0 0 16px;
   color: var(--mat-sys-primary);
@@ -88,8 +103,20 @@
   gap: 10px;
 }
 
+.check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.check-text {
+  padding-top: 11px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
 .step-number {
   font-weight: 600;
   color: var(--mat-sys-primary);
-  margin-right: 2px;
+  margin-right: 4px;
 }
