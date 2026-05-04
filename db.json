@@ -131,6 +131,437 @@
       ],
       "anecdote": "Les Maluns sont le plat paysan par excellence des vallées reculées des Grisons, notamment de la région de Lugnez et de la Surselva rhéto-romane. Dans les hivers rigoureux où les villages étaient isolés pendant des semaines, ce mélange de pommes de terre et de farine — les deux denrées toujours disponibles — nourrissait familles et bergers. Le mot 'maluns' vient du romanche et n'a pas d'équivalent exact en français.",
       "image": "imgs/maluns.jpg"
+    },
+    {
+      "id": 6,
+      "titre": "Älplermagronen",
+      "canton": "Uri",
+      "date": "1880-01-01",
+      "regime": ["végétarien"],
+      "ingredients": [
+        "400g de macaronis",
+        "500g de pommes de terre à chair ferme",
+        "2 dl de crème entière",
+        "150g d'Appenzeller ou de Gruyère râpé",
+        "2 oignons",
+        "40g de beurre",
+        "Sel, poivre, noix de muscade",
+        "Compote de pommes pour servir"
+      ],
+      "etapes": [
+        "Éplucher et couper les pommes de terre en petits dés.",
+        "Cuire les pommes de terre dans l'eau salée pendant 10 min.",
+        "Ajouter les macaronis et cuire encore 10 min jusqu'à ce que tout soit tendre.",
+        "Égoutter et remettre dans la casserole.",
+        "Incorporer la crème chaude et le fromage râpé, assaisonner.",
+        "Dans une poêle, faire revenir les oignons émincés dans le beurre jusqu'à dorure.",
+        "Servir les macaronis dans des assiettes creuses et garnir d'oignons frits.",
+        "Accompagner d'une coupelle de compote de pommes froide."
+      ],
+      "anecdote": "Les Älplermagronen — littéralement 'macaronis des alpagistes' — sont nés dans les refuges et chalets d'Uri et d'Appenzell. Les bergers passaient l'été en altitude avec peu de provisions : pommes de terre, pâtes séchées, fromage et crème. La compote de pommes en accompagnement peut surprendre, mais l'acidité fruitée équilibre parfaitement le gras du plat. C'est l'un des rares plats suisses à combiner sucré et salé dans la même assiette.",
+      "image": "imgs/aelplermagronen-0-16-9.webp"
+    },
+    {
+      "id": 7,
+      "titre": "Birchermüesli",
+      "canton": "Zurich",
+      "date": "1900-01-01",
+      "regime": ["végétarien", "sans gluten"],
+      "ingredients": [
+        "4 cs de flocons d'avoine",
+        "3 cs d'eau froide",
+        "200g de yaourt nature entier",
+        "1 cs de jus de citron",
+        "1 cs de miel",
+        "2 pommes (non épluchées)",
+        "2 cs de noisettes ou amandes concassées",
+        "Fruits de saison (myrtilles, framboises, banane)"
+      ],
+      "etapes": [
+        "La veille, faire tremper les flocons d'avoine dans l'eau froide toute la nuit au réfrigérateur.",
+        "Le matin, mélanger les flocons trempés avec le yaourt.",
+        "Ajouter le jus de citron et le miel, bien mélanger.",
+        "Râper les pommes directement dans le mélange (avec la peau) et remuer aussitôt pour éviter l'oxydation.",
+        "Répartir dans des bols et garnir de fruits de saison.",
+        "Parsemer de fruits secs et servir immédiatement."
+      ],
+      "anecdote": "Le Birchermüesli a été inventé vers 1900 par le médecin zurichois Maximilian Oskar Bircher-Benner pour ses patients de la clinique Lebendige Kraft sur le Zürichberg. Convaincu des vertus curatives des aliments crus, il prescrivait ce mélange comme thérapie. Ironiquement, ce plat diététique conçu pour les malades est devenu l'un des petit-déjeuners les plus populaires au monde, souvent bien plus riche que la recette originale.",
+      "image": "imgs/Schwarzenbach-Birchermueesli.jpg"
+    },
+    {
+      "id": 8,
+      "titre": "Tarte aux pruneaux vaudoise",
+      "canton": "Vaud",
+      "date": "1850-01-01",
+      "regime": ["végétarien"],
+      "ingredients": [
+        "300g de pâte brisée",
+        "700g de pruneaux frais (quetsches)",
+        "100g de sucre cristallisé",
+        "1 cs de cannelle moulue",
+        "2 cs de chapelure fine",
+        "1 cs de beurre en noisettes"
+      ],
+      "etapes": [
+        "Préchauffer le four à 200°C.",
+        "Abaisser la pâte brisée et foncer un moule de 28 cm.",
+        "Piquer le fond avec une fourchette et saupoudrer de chapelure pour absorber le jus.",
+        "Dénoyauter les pruneaux et les couper en deux.",
+        "Disposer les demi-pruneaux côté coupé vers le haut en rangées serrées sur le fond de tarte.",
+        "Mélanger sucre et cannelle, en saupoudrer généreusement les fruits.",
+        "Répartir les noisettes de beurre sur le dessus.",
+        "Cuire 35–40 min jusqu'à ce que les bords soient dorés et les pruneaux légèrement caramélisés."
+      ],
+      "anecdote": "La tarte aux pruneaux est la reine des marchés d'automne dans le canton de Vaud, où les quetsches — une variété de prune allongée — mûrissent entre août et septembre. Dans les familles vaudoises, sa préparation marquait autrefois la fin de l'été et le début des conserves. La chapelure sous les fruits est le secret des grandes-mères : elle absorbe le jus et évite que la pâte ne ramollisse.",
+      "image": "imgs/tartepruneaux.jpg"
+    },
+    {
+      "id": 9,
+      "titre": "Polenta e brasato",
+      "canton": "Tessin",
+      "date": "1720-01-01",
+      "regime": [],
+      "ingredients": [
+        "300g de polenta de maïs gruau",
+        "1,2 litre d'eau",
+        "1,5 cc de sel",
+        "30g de beurre",
+        "800g de bœuf à braiser (paleron ou joue)",
+        "1 bouteille de Merlot du Tessin",
+        "2 carottes",
+        "2 branches de céleri",
+        "1 oignon",
+        "3 gousses d'ail",
+        "2 cs d'huile d'olive",
+        "Romarin, thym, laurier"
+      ],
+      "etapes": [
+        "La veille, faire mariner le bœuf dans le vin rouge avec les légumes et les herbes.",
+        "Le lendemain, égoutter la viande et filtrer la marinade.",
+        "Faire dorer la viande de toutes parts dans l'huile à feu vif.",
+        "Ajouter les légumes de la marinade et faire revenir 5 min.",
+        "Verser la marinade filtrée, couvrir et cuire à feu très doux pendant 3 heures.",
+        "En fin de cuisson, préparer la polenta : porter l'eau salée à ébullition.",
+        "Verser la polenta en pluie en fouettant, puis cuire 40 min à feu doux en remuant souvent.",
+        "Incorporer le beurre à la polenta et servir avec le brasato tranché et son jus réduit."
+      ],
+      "anecdote": "La polenta est la nourriture de l'âme tessinoise. Pendant des siècles, avant l'arrivée de la pomme de terre, elle constituait la base de l'alimentation des paysans de la Leventina et de la Riviera. Le brasato au Merlot, lui, reflète l'influence italienne et la fierté viticole du Tessin, seul canton suisse à produire un Merlot d'envergure internationale. Cette recette traverse les frontières culturelles et linguistiques de la Suisse en une seule assiette.",
+      "image": "imgs/Polenta-con-brasato.jpg"
+    },
+    {
+      "id": 10,
+      "titre": "Bündnerfleisch",
+      "canton": "Grisons",
+      "date": "1900-01-01",
+      "regime": ["sans gluten"],
+      "ingredients": [
+        "200g de Bündnerfleisch (viande des Grisons AOP) tranché très finement",
+        "1 filet d'huile d'olive de qualité",
+        "Poivre noir du moulin",
+        "Pain de seigle grillé pour servir",
+        "Cornichons et pickles de légumes pour servir"
+      ],
+      "etapes": [
+        "Sortir le Bündnerfleisch du réfrigérateur 15 min avant de servir pour qu'il soit à température ambiante.",
+        "Disposer les tranches en éventail ou en rosace sur une assiette de service froide.",
+        "Arroser d'un très léger filet d'huile d'olive.",
+        "Donner quelques tours de moulin à poivre.",
+        "Accompagner de pain de seigle grillé et d'une petite sélection de pickles.",
+        "Servir comme entrée ou à l'heure de l'apéritif."
+      ],
+      "anecdote": "Le Bündnerfleisch est le résultat ingénieux de la nécessité : dans les vallées isolées des Grisons, sans réfrigération, les paysans séchaient la viande bovine dans l'air alpin froid et sec depuis le XVe siècle. La viande est d'abord marinée plusieurs semaines dans un mélange de sel, sucre et épices, puis pressée et séchée pendant plusieurs mois à l'air libre. Le résultat est une viande d'une densité et d'un arôme incomparables, protégée depuis 2000 par une AOP.",
+      "image": "imgs/bundnerfleisch.jpg"
+    },
+    {
+      "id": 11,
+      "titre": "Basler Läckerli",
+      "canton": "Bâle-Ville",
+      "date": "1412-01-01",
+      "regime": ["végétarien"],
+      "ingredients": [
+        "500g de miel",
+        "250g de sucre",
+        "500g de farine",
+        "150g d'amandes entières pelées",
+        "100g d'écorces d'orange et de citron confites",
+        "2 cc d'épices pain d'épices (cannelle, clou de girofle, anis, cardamome)",
+        "1 cc de potasse (ou bicarbonate)",
+        "2 cl de kirsch",
+        "Sucre glace et eau pour le glaçage"
+      ],
+      "etapes": [
+        "Porter le miel et le sucre à ébullition, laisser refroidir légèrement.",
+        "Incorporer la farine, les épices, la potasse diluée dans le kirsch.",
+        "Ajouter les amandes et les écorces confites, mélanger jusqu'à pâte homogène.",
+        "Laisser reposer la pâte 2 heures à température ambiante.",
+        "Préchauffer le four à 220°C. Étaler la pâte sur une plaque beurrée (1 cm d'épaisseur).",
+        "Cuire 15 min jusqu'à ce que la surface soit légèrement dorée.",
+        "Préparer le glaçage : dissoudre du sucre glace dans un peu d'eau bouillante.",
+        "Badigeonner immédiatement à la sortie du four, couper en rectangles et laisser refroidir."
+      ],
+      "anecdote": "Les Basler Läckerli sont les plus vieux biscuits de Suisse encore produits aujourd'hui. La première mention écrite remonte au concile de Constance (1414), où les boulangers bâlois en auraient servi aux délégués. La recette est jalousement gardée par les confiseurs de Bâle, et chaque maison possède sa propre formule d'épices transmise de génération en génération. Le nom 'Läckerli' vient du vieux-haut-allemand pour 'friandise'.",
+      "image": "imgs/Basler-Lackerli.jpeg"
+    },
+    {
+      "id": 12,
+      "titre": "Vermicelles de châtaignes",
+      "canton": "Tessin",
+      "date": "1920-01-01",
+      "regime": ["végétarien", "sans gluten"],
+      "ingredients": [
+        "500g de purée de châtaignes (ou châtaignes cuites et pelées)",
+        "100g de sucre glace",
+        "50g de beurre doux à température ambiante",
+        "2 cs de crème de marrons",
+        "3 cs de kirsch ou de rhum",
+        "1 pincée de sel",
+        "200g de crème double pour servir",
+        "Copeaux de chocolat noir pour décorer"
+      ],
+      "etapes": [
+        "Mixer les châtaignes avec le beurre, le sucre glace, la crème de marrons et l'alcool jusqu'à obtenir une pâte très lisse.",
+        "Assaisonner d'une pincée de sel.",
+        "Réfrigérer la préparation pendant au moins 1 heure.",
+        "Au moment de servir, passer la pâte de châtaignes dans un presse-purée ou un moulin à légumes à grilles fines pour former des vermicelles.",
+        "Déposer délicatement les vermicelles sur des assiettes individuelles.",
+        "Accompagner d'une quenelle de crème double et décorer de copeaux de chocolat noir."
+      ],
+      "anecdote": "Ce dessert aux allures de nid de pâtes est en réalité une invention de confiseur suisse du début du XXe siècle. Le châtaignier, 'l'arbre à pain' du Tessin, a nourri les populations de montagne pendant des siècles avant l'arrivée de la pomme de terre. Les vermicelles sont devenus le dessert automnal de référence dans toute la Suisse, symbole de la saison des forêts et des brumes, bien au-delà de leur canton d'origine.",
+      "image": "imgs/vermicelles.jpg"
+    },
+    {
+      "id": 13,
+      "titre": "Saucisson vaudois au vin blanc",
+      "canton": "Vaud",
+      "date": "1800-01-01",
+      "regime": ["sans gluten"],
+      "ingredients": [
+        "4 saucissons vaudois IGP",
+        "5 dl de vin blanc vaudois (Chasselas)",
+        "5 dl d'eau",
+        "1 oignon piqué de clous de girofle",
+        "2 feuilles de laurier",
+        "5 grains de poivre",
+        "800g de pommes de terre en robe des champs",
+        "Moutarde de Dijon pour servir"
+      ],
+      "etapes": [
+        "Dans une casserole, verser le vin blanc, l'eau, l'oignon piqué, le laurier et le poivre.",
+        "Porter à frémissement — ne jamais faire bouillir.",
+        "Piquer légèrement les saucissons avec une aiguille fine (3-4 piqûres maximum).",
+        "Plonger les saucissons dans le bouillon frémissant.",
+        "Pocher à feu très doux, sans ébullition, pendant 20–25 min.",
+        "Cuire les pommes de terre en robe des champs séparément.",
+        "Servir les saucissons entiers avec les pommes de terre et la moutarde."
+      ],
+      "anecdote": "Le saucisson vaudois bénéficie d'une Indication Géographique Protégée depuis 2006. Fabriqué exclusivement dans le canton de Vaud avec du porc suisse, il se distingue par sa chair grossièrement hachée et son enrobage de couenne naturelle. La tradition veut qu'on le pochée dans du Chasselas, le cépage blanc emblématique du Lavaux — classé patrimoine mondial de l'UNESCO. Ne jamais faire bouillir : c'est la règle d'or pour que la peau ne se fende pas.",
+      "image": "imgs/saucisson-vaudois.jpg"
+    },
+    {
+      "id": 14,
+      "titre": "Engadiner Nusstorte",
+      "canton": "Grisons",
+      "date": "1926-01-01",
+      "regime": ["végétarien"],
+      "ingredients": [
+        "Pour la pâte : 300g de farine, 200g de beurre, 100g de sucre, 1 œuf, 1 pincée de sel",
+        "Pour la garniture : 300g de noix concassées",
+        "200g de sucre",
+        "1,5 dl de crème entière",
+        "2 cs de miel",
+        "1 cs de beurre"
+      ],
+      "etapes": [
+        "Préparer la pâte sablée : sabler farine, beurre froid et sucre, ajouter l'œuf et pétrir rapidement.",
+        "Former une boule, envelopper et réfrigérer 1 heure.",
+        "Préparer la garniture : caraméliser le sucre à sec jusqu'à couleur ambrée.",
+        "Décuire avec la crème chaude en remuant, puis ajouter le miel et le beurre.",
+        "Incorporer les noix concassées et laisser tiédir.",
+        "Préchauffer le four à 180°C. Partager la pâte en deux.",
+        "Foncer un moule rond de 24 cm avec la première moitié, verser la garniture aux noix.",
+        "Recouvrir avec la seconde abaisse, souder les bords et cuire 35–40 min jusqu'à brun doré."
+      ],
+      "anecdote": "La Nusstorte de l'Engadine est l'une des pâtisseries les plus copiées de Suisse, mais aucune version n'égale celle achetée dans une confiserie de Saint-Moritz ou de Sils-Maria. La recette telle qu'on la connaît aujourd'hui a été mise au point au début du XXe siècle par les confiseurs engadinois, qui exportaient leur savoir-faire dans toute l'Europe. La noix, abondante dans les vergers de la Basse-Engadine, est ici associée au caramel dans un équilibre que les gourmands défendent comme un trésor national.",
+      "image": "imgs/nusstorte.jpg"
+    },
+    {
+      "id": 15,
+      "titre": "Meringues double crème de la Gruyère",
+      "canton": "Fribourg",
+      "date": "1880-01-01",
+      "regime": ["végétarien", "sans gluten"],
+      "ingredients": [
+        "4 blancs d'œufs (à température ambiante)",
+        "200g de sucre cristallisé",
+        "1 pincée de sel",
+        "200g de double crème de la Gruyère (minimum 45% de matière grasse)",
+        "Fruits rouges frais pour servir (facultatif)"
+      ],
+      "etapes": [
+        "Préchauffer le four à 100°C (chaleur tournante).",
+        "Monter les blancs en neige ferme avec la pincée de sel.",
+        "Incorporer le sucre en trois fois en fouettant, jusqu'à ce que la meringue soit brillante et très ferme.",
+        "Façonner de grosses coquilles à l'aide de deux grandes cuillères sur une plaque recouverte de papier cuisson.",
+        "Sécher au four 2h30 à 3h en laissant la porte entreouverte avec une cuillère en bois.",
+        "Laisser refroidir complètement dans le four éteint.",
+        "Au moment de servir, battre légèrement la double crème à la fourchette (elle est si grasse qu'elle n'a pas besoin d'être fouettée).",
+        "Assembler deux meringues avec une généreuse cuillerée de double crème."
+      ],
+      "anecdote": "La meringue à la double crème est le dessert officieux de la foire du Bélier à Fribourg et de toute fête campagnarde de la région de la Gruyère. La double crème fribourgeoise — une crème fraîche épaisse et dense que l'on trouve rarement hors du canton — est si riche qu'on peut la poser à la cuillère sans qu'elle coule. Sa fabrication artisanale est en déclin, et les puristes parcourent des kilomètres pour trouver la véritable version d'alpage.",
+      "image": "imgs/meringues-double-creme.jpg"
+    },
+    {
+      "id": 16,
+      "titre": "Soupe à l'orge des Grisons",
+      "canton": "Grisons",
+      "date": "1750-01-01",
+      "regime": ["végétarien"],
+      "ingredients": [
+        "150g d'orge perlé",
+        "2 carottes",
+        "2 branches de céleri-rave en dés",
+        "1 poireau",
+        "1 oignon",
+        "2 pommes de terre",
+        "1,5 litre de bouillon de légumes",
+        "2 dl de crème entière",
+        "30g de beurre",
+        "Sel, poivre, noix de muscade",
+        "Persil haché"
+      ],
+      "etapes": [
+        "Rincer l'orge et le faire tremper 1 heure dans l'eau froide.",
+        "Éplucher et couper en petits dés les carottes, le céleri, les pommes de terre et l'oignon.",
+        "Émincer le poireau en rondelles.",
+        "Faire revenir l'oignon dans le beurre jusqu'à translucidité.",
+        "Ajouter tous les légumes et faire revenir 3 min.",
+        "Égoutter l'orge et l'ajouter avec le bouillon chaud.",
+        "Cuire à feu doux pendant 40–45 min jusqu'à ce que l'orge soit tendre.",
+        "Incorporer la crème, assaisonner de sel, poivre et muscade.",
+        "Servir parsemé de persil frais. La soupe doit être épaisse et veloutée."
+      ],
+      "anecdote": "La Bündner Gerstensuppe est la soupe nationale des Grisons et figure dans les menus de ski depuis que les premières stations ont ouvert leurs portes. L'orge cultivé en altitude dans la vallée de l'Inn était autrefois la céréale principale des Grisons, avant que le blé et la pomme de terre ne prennent le dessus. Aujourd'hui protégée comme recette traditionnelle du canton, elle est servie dans chaque Beiz (bistrot local) de Coire à Davos.",
+      "image": "imgs/soupe-orge.png"
+    },
+    {
+      "id": 17,
+      "titre": "Filets de perche du Léman",
+      "canton": "Vaud",
+      "date": "1900-01-01",
+      "regime": ["sans gluten"],
+      "ingredients": [
+        "600g de filets de perche du Léman",
+        "100g de farine de riz (ou farine blanche)",
+        "2 œufs battus",
+        "100g de chapelure fine",
+        "80g de beurre clarifié",
+        "1 citron",
+        "Sel, poivre blanc",
+        "Persil frit pour garnir",
+        "Frites maison pour servir"
+      ],
+      "etapes": [
+        "Sécher les filets de perche avec du papier absorbant.",
+        "Assaisonner sel et poivre des deux côtés.",
+        "Passer chaque filet dans la farine, puis dans l'œuf battu, puis dans la chapelure.",
+        "Faire chauffer le beurre clarifié dans une grande poêle à feu moyen-vif.",
+        "Cuire les filets panés 2–3 min de chaque côté jusqu'à croûte dorée.",
+        "Égoutter sur papier absorbant.",
+        "Faire frire quelques brins de persil dans le beurre restant 30 secondes.",
+        "Servir immédiatement avec un quartier de citron, le persil frit et des frites."
+      ],
+      "anecdote": "Les filets de perche sont le plat emblématique des restaurants au bord du Lac Léman, de Genève à Lausanne et jusqu'à Montreux. La perche fluviatile du Léman — pêchée à la ligne par des pêcheurs professionnels en barque — est une espèce d'une délicatesse incomparable. Depuis les années 1980, la surpêche et la prolifération d'autres espèces ont provoqué une raréfaction dramatique : une grande partie des 'perches du Léman' servies aujourd'hui provient en réalité du lac de Constance ou des pays de l'Est, au grand dam des puristes.",
+      "image": "imgs/filets-perche.jpg"
+    },
+    {
+      "id": 18,
+      "titre": "Choucroute garnie bernoise",
+      "canton": "Berne",
+      "date": "1850-01-01",
+      "regime": [],
+      "ingredients": [
+        "800g de choucroute crue (chou fermenté)",
+        "200g de lard fumé en tranches épaisses",
+        "4 saucisses de Francfort ou cervelas suisses",
+        "300g de palette de porc demi-sel",
+        "1 dl de vin blanc bernois (Pinot Gris)",
+        "1 oignon",
+        "2 gousses d'ail",
+        "10 grains de genièvre",
+        "1 feuille de laurier",
+        "800g de pommes de terre farineuses",
+        "Moutarde de Berne pour servir"
+      ],
+      "etapes": [
+        "Rincer la choucroute à l'eau froide, égoutter soigneusement.",
+        "Faire revenir l'oignon et l'ail émincés dans un peu de graisse dans une cocotte.",
+        "Ajouter la choucroute, le genièvre, le laurier et le vin blanc.",
+        "Disposer le lard et la palette sur la choucroute, couvrir.",
+        "Mijoter à feu doux pendant 1h30.",
+        "Ajouter les saucisses les 20 dernières minutes de cuisson.",
+        "Cuire les pommes de terre séparément à l'eau salée.",
+        "Servir sur un grand plat avec les viandes disposées sur la choucroute et les pommes de terre à côté."
+      ],
+      "anecdote": "La choucroute suisse est souvent méconnue derrière sa cousine alsacienne, mais la tradition de fermentation du chou dans les cantons alémaniques est tout aussi ancienne. À Berne, on la prépare avec des produits charcutiers locaux et un Pinot Gris bernois plutôt que du Riesling. La fermentation du chou, pratiquée depuis le Moyen-Âge pour conserver les légumes d'hiver, était jadis une affaire communautaire : chaque village disposait d'un grand bac à fermentation partagé.",
+      "image": "imgs/choucroute-bernoise.jpg"
+    },
+    {
+      "id": 19,
+      "titre": "Zuger Kirschtorte",
+      "canton": "Zoug",
+      "date": "1921-01-01",
+      "regime": ["végétarien"],
+      "ingredients": [
+        "Pour la génoise : 4 œufs, 120g de sucre, 120g de farine, 1 pincée de sel",
+        "Pour la crème au beurre : 200g de beurre doux, 150g de sucre glace, 2 jaunes d'œufs, 3 cs de kirsch de Zoug",
+        "Pour le biscuit aux amandes : 100g d'amandes en poudre, 100g de sucre, 2 blancs d'œufs",
+        "Kirsch pour imbiber",
+        "Sucre glace pour décorer",
+        "Cerises confites pour garnir"
+      ],
+      "etapes": [
+        "Préparer la génoise classique, cuire à 180°C pendant 25 min, laisser refroidir et couper en deux disques.",
+        "Préparer le biscuit aux amandes : mélanger poudre d'amandes, sucre et blancs battus, étaler et cuire 15 min à 180°C.",
+        "Préparer la crème au beurre : crémer le beurre, incorporer le sucre glace, les jaunes et le kirsch.",
+        "Imbiber les disques de génoise généreusement avec du kirsch.",
+        "Monter le gâteau : génoise, couche de crème au beurre, disque de biscuit amande, crème au beurre, génoise.",
+        "Masquer tout le gâteau avec la crème au beurre restante.",
+        "Réfrigérer 2 heures, puis saupoudrer de sucre glace et garnir de cerises confites."
+      ],
+      "anecdote": "La Zuger Kirschtorte a été créée en 1921 par le confiseur Heinrich Höhn à Zoug. Le canton de Zoug était alors le premier producteur de cerises de Suisse, et sa distillerie de kirsch — un eau-de-vie de cerise — était réputée dans toute la Confédération. Ce gâteau somptueux a failli disparaître pendant la Seconde Guerre mondiale faute de kirsch, mais a survécu pour devenir l'emblème gastronomique du canton.",
+      "image": "imgs/zuger-kirschtorte.jpg"
+    },
+    {
+      "id": 20,
+      "titre": "Capuns grisonnais",
+      "canton": "Grisons",
+      "date": "1700-01-01",
+      "regime": ["végétarien"],
+      "ingredients": [
+        "12 grandes feuilles de bette à carde ou de chou vert",
+        "200g de spätzli (pâtes fraîches ou sèches)",
+        "100g de lard fumé en petits dés",
+        "1 oignon haché finement",
+        "2 œufs",
+        "100g de Salsiz (saucisse séchée des Grisons) en dés",
+        "2 cs de persil haché",
+        "1 cs de ciboulette",
+        "Sel, poivre, muscade",
+        "5 dl de bouillon de viande",
+        "1 dl de crème entière"
+      ],
+      "etapes": [
+        "Cuire les spätzli al dente, égoutter et refroidir.",
+        "Blanchir les feuilles de bette 1 min dans l'eau bouillante salée, égoutter et sécher.",
+        "Faire revenir l'oignon et le lard, ajouter le Salsiz.",
+        "Mélanger spätzli, lard, salsiz, œufs battus, herbes. Assaisonner.",
+        "Déposer une cuillerée de farce au centre de chaque feuille et rouler en petit paquet bien serré.",
+        "Disposer les capuns serrés dans un plat à gratin.",
+        "Verser le bouillon chaud pour couvrir à mi-hauteur, ajouter la crème.",
+        "Cuire à four moyen (170°C) pendant 30–35 min en arrosant régulièrement."
+      ],
+      "anecdote": "Les Capuns sont l'un des plats les plus originaux de la cuisine rhéto-romane des Grisons. Le nom vient du romanche et désigne ces petits paquets d'herbes et de pâtes enveloppés dans des feuilles. Chaque vallée des Grisons possède sa propre version de la farce : avec ou sans viande, avec différentes herbes sauvages ramassées en altitude. Les femmes des villages de la Surselva organisaient autrefois des 'capuns-Abend' — des soirées communautaires où l'on roulait des centaines de capuns ensemble.",
+      "image": "imgs/capuns.jpg"
     }
   ]
 }
