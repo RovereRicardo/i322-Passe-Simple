@@ -1,9 +1,9 @@
 @if (recette(); as r) {
   <article class="detail-page">
 
-    <a mat-button routerLink="/recettes" class="back-btn">
+    <button mat-button (click)="goBack()" class="back-btn">
       <mat-icon>arrow_back</mat-icon> Toutes les recettes
-    </a>
+    </button>
 
     <header class="detail-header">
       <h1 class="mat-headline-large">{{ r.titre }}</h1>

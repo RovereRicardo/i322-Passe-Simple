@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { Location } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 import { SlicePipe } from '@angular/common';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map, switchMap, catchError, of } from 'rxjs';
@@ -15,7 +16,6 @@ import { NotFoundComponent } from '../../not-found/not-found.component';
   selector: 'app-recette-detail',
   standalone: true,
   imports: [
-    RouterLink,
     MatButtonModule,
     MatIconModule,
     MatChipsModule,
@@ -30,6 +30,9 @@ import { NotFoundComponent } from '../../not-found/not-found.component';
 export class RecetteDetailComponent {
   private readonly svc = inject(RecettesService);
   private readonly route = inject(ActivatedRoute);
+  private readonly location = inject(Location);
+
+  goBack(): void { this.location.back(); }
 
   private readonly id$ = this.route.paramMap.pipe(
     map((p) => Number(p.get('id')))
