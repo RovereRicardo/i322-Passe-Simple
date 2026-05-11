@@ -105,7 +105,8 @@ passe-simple/
 │       └── shared/
 │           ├── search-bar/         # Champ de recherche textuelle
 │           └── filter-bar/         # Filtres par époque, régime et canton
-├── db.json                         # Données mock (5 recettes suisses)
+│           └── footer/         # Footer
+├── db.json                         # Données mock (20 recettes suisses)
 ├── angular.json
 └── package.json
 ```
