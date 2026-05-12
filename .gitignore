@@ -30,6 +30,3 @@ npm-debug.log*
 
 # Misc
 tmp/
-
-# Claude Code
-CLAUDE.md
